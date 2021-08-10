@@ -14,6 +14,7 @@ class Todo {
     }
 
     render() {
+        this.input.value = '';
         this.todoList.textContent = '';
         this.todoCompleted.textContent = '';
         this.todoData.forEach(this.createItem, this);
